@@ -27,8 +27,8 @@
         <Label Content="VI" HorizontalAlignment="Left" Margin="374,67,0,0" VerticalAlignment="Top"/>
         <Label Content="Plain Text" HorizontalAlignment="Left" Margin="374,121,0,0" VerticalAlignment="Top"/>
         <Label Content="Chiper Text" HorizontalAlignment="Left" Margin="374,203,0,0" VerticalAlignment="Top"/>
-        <Label Content="Time/message at encryption: " HorizontalAlignment="Left" Margin="300,323,0,0" VerticalAlignment="Top" Height="30" Width="200"/>
-        <Label Content="Time/message at decryption: " HorizontalAlignment="Left" Margin="300,358,0,0" VerticalAlignment="Top" Height="30" Width="200"/>
+        <Label x:Name="encryptLBL" Content="Time/message at encryption: " HorizontalAlignment="Left" Margin="300,323,0,0" VerticalAlignment="Top" Height="30" Width="284"/>
+        <Label x:Name="decryptLBL" Content="Time/message at decryption: " HorizontalAlignment="Left" Margin="300,358,0,0" VerticalAlignment="Top" Height="30" Width="284"/>
         <Label Content="ASCII" HorizontalAlignment="Left" Margin="331,144,0,0" VerticalAlignment="Top"/>
         <Label Content="HEX" HorizontalAlignment="Left" Margin="331,172,0,0" VerticalAlignment="Top"/>
         <Label Content="ASCII" HorizontalAlignment="Left" Margin="331,226,0,0" VerticalAlignment="Top"/>

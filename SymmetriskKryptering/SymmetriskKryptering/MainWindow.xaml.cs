@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
@@ -23,6 +24,9 @@ namespace SymmetriskKryptering
     public partial class MainWindow : Window
     {
         SymmetricAlgorithm selectedSymmetricAlgorithm;
+        Stopwatch encryptTime = new Stopwatch();
+        Stopwatch decryptTime = new Stopwatch();
+
 
         public MainWindow()
         {
@@ -36,26 +40,59 @@ namespace SymmetriskKryptering
 
         private void EncryptBTN_Click(object sender, RoutedEventArgs e)
         {
-            byte[] ciphertext = Encrypt(StringToByteArray(plainASCIITXT.Text), HexStringToByteArray(keyTXT.Text), HexStringToByteArray(viTXT.Text));
+            try
+            {
+                encryptTime.Start();
+                byte[] ciphertext = Encrypt(StringToByteArray(plainASCIITXT.Text), HexStringToByteArray(keyTXT.Text), HexStringToByteArray(viTXT.Text));
+                encryptTime.Stop();
 
-            chiperASCIITXT.Text = ByteArrayToString(ciphertext);
-            chiperHexTXT.Text = ByteArrayToHexString(ciphertext);
-            plainHexTXT.Text = ByteArrayToHexString(StringToByteArray(plainASCIITXT.Text));
+                chiperASCIITXT.Text = ByteArrayToString(ciphertext);
+                chiperHexTXT.Text = ByteArrayToHexString(ciphertext);
+                plainHexTXT.Text = ByteArrayToHexString(StringToByteArray(plainASCIITXT.Text));
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(error.Message);
+            }
         }
 
         private void DecryptBTN_Click(object sender, RoutedEventArgs e)
         {
-
+            try
+            {
+                decryptTime.Start();
+                byte[] plaintext = Decrypt(HexStringToByteArray(chiperHexTXT.Text), HexStringToByteArray(keyTXT.Text), HexStringToByteArray(viTXT.Text));
+                decryptTime.Stop();
+                MessageBox.Show(ByteArrayToString(plaintext), "Decrypted message");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Check inputs", "Error");
+            }
         }
 
         private void GetEncryptTimeBTN_Click(object sender, RoutedEventArgs e)
         {
-
+            try
+            {
+                encryptLBL.Content = "Time/message at encryption: " + encryptTime.Elapsed;
+            }
+            catch (Exception)
+            {
+                encryptLBL.Content = "Time/message at encryption: ";
+            }
         }
 
         private void GetDecryptTimeBTN_Click(object sender, RoutedEventArgs e)
         {
-
+            try
+            {
+                decryptLBL.Content = "Time/message at decryption: " + decryptTime.Elapsed.ToString();
+            }
+            catch (Exception)
+            {
+                decryptLBL.Content = "Time/message at decryption: ";
+            }
         }
 
         public void GenerateKeyAndIV()

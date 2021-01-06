@@ -1,0 +1,38 @@
+﻿<Window x:Class="SymmetriskKryptering.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SymmetriskKryptering"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="600">
+    <Grid>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="75,45,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="0">
+            <ComboBoxItem Content="DES"/>
+            <ComboBoxItem Content="3DES"/>
+            <ComboBoxItem Content="Rijndael"/>
+        </ComboBox>
+        <Button x:Name="GenerateKeyAndVIBTN" Content="Generate Key and VI" HorizontalAlignment="Left" Margin="75,102,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="GenerateKeyAndVIBTN_Click"/>
+        <Button x:Name="EncryptBTN" Content="Encrypt" HorizontalAlignment="Left" Margin="75,187,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="EncryptBTN_Click"/>
+        <Button x:Name="DecryptBTN" Content="Decrypt" HorizontalAlignment="Left" Margin="75,222,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="DecryptBTN_Click"/>
+        <Button x:Name="GetEncryptTimeBTN" Content="Get Encrypt Time" HorizontalAlignment="Left" Margin="75,323,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="GetEncryptTimeBTN_Click"/>
+        <Button x:Name="GetDecryptTimeBTN" Content="Get Decrypt Time" HorizontalAlignment="Left" Margin="75,358,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="GetDecryptTimeBTN_Click"/>
+        <TextBox x:Name="keyTXT" HorizontalAlignment="Left" Height="23" Margin="374,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <TextBox x:Name="viTXT" HorizontalAlignment="Left" Height="23" Margin="374,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <TextBox x:Name="plainASCIITXT" HorizontalAlignment="Left" Height="23" Margin="374,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <TextBox x:Name="plainHexTXT" HorizontalAlignment="Left" Height="23" Margin="374,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <TextBox x:Name="chiperASCIITXT" HorizontalAlignment="Left" Height="23" Margin="374,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <TextBox x:Name="chiperHexTXT" HorizontalAlignment="Left" Height="23" Margin="374,257,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <Label Content="Key" HorizontalAlignment="Left" Margin="374,13,0,0" VerticalAlignment="Top"/>
+        <Label Content="VI" HorizontalAlignment="Left" Margin="374,67,0,0" VerticalAlignment="Top"/>
+        <Label Content="Plain Text" HorizontalAlignment="Left" Margin="374,121,0,0" VerticalAlignment="Top"/>
+        <Label Content="Chiper Text" HorizontalAlignment="Left" Margin="374,203,0,0" VerticalAlignment="Top"/>
+        <Label Content="Time/message at encryption: " HorizontalAlignment="Left" Margin="300,323,0,0" VerticalAlignment="Top" Height="30" Width="200"/>
+        <Label Content="Time/message at decryption: " HorizontalAlignment="Left" Margin="300,358,0,0" VerticalAlignment="Top" Height="30" Width="200"/>
+        <Label Content="ASCII" HorizontalAlignment="Left" Margin="331,144,0,0" VerticalAlignment="Top"/>
+        <Label Content="HEX" HorizontalAlignment="Left" Margin="331,172,0,0" VerticalAlignment="Top"/>
+        <Label Content="ASCII" HorizontalAlignment="Left" Margin="331,226,0,0" VerticalAlignment="Top"/>
+        <Label Content="HEX" HorizontalAlignment="Left" Margin="331,254,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

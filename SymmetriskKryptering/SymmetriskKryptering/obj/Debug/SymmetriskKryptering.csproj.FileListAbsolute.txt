@@ -1,0 +1,15 @@
+C:\Users\chri45i4\source\repos\SymmetriskKryptering\SymmetriskKryptering\SymmetriskKryptering\bin\Debug\SymmetriskKryptering.exe.config
+C:\Users\chri45i4\source\repos\SymmetriskKryptering\SymmetriskKryptering\SymmetriskKryptering\bin\Debug\SymmetriskKryptering.exe
+C:\Users\chri45i4\source\repos\SymmetriskKryptering\SymmetriskKryptering\SymmetriskKryptering\bin\Debug\SymmetriskKryptering.pdb
+C:\Users\chri45i4\source\repos\SymmetriskKryptering\SymmetriskKryptering\SymmetriskKryptering\obj\Debug\SymmetriskKryptering.csprojAssemblyReference.cache
+C:\Users\chri45i4\source\repos\SymmetriskKryptering\SymmetriskKryptering\SymmetriskKryptering\obj\Debug\MainWindow.g.cs
+C:\Users\chri45i4\source\repos\SymmetriskKryptering\SymmetriskKryptering\SymmetriskKryptering\obj\Debug\App.g.cs
+C:\Users\chri45i4\source\repos\SymmetriskKryptering\SymmetriskKryptering\SymmetriskKryptering\obj\Debug\SymmetriskKryptering_MarkupCompile.cache
+C:\Users\chri45i4\source\repos\SymmetriskKryptering\SymmetriskKryptering\SymmetriskKryptering\obj\Debug\SymmetriskKryptering_MarkupCompile.lref
+C:\Users\chri45i4\source\repos\SymmetriskKryptering\SymmetriskKryptering\SymmetriskKryptering\obj\Debug\MainWindow.baml
+C:\Users\chri45i4\source\repos\SymmetriskKryptering\SymmetriskKryptering\SymmetriskKryptering\obj\Debug\SymmetriskKryptering.g.resources
+C:\Users\chri45i4\source\repos\SymmetriskKryptering\SymmetriskKryptering\SymmetriskKryptering\obj\Debug\SymmetriskKryptering.Properties.Resources.resources
+C:\Users\chri45i4\source\repos\SymmetriskKryptering\SymmetriskKryptering\SymmetriskKryptering\obj\Debug\SymmetriskKryptering.csproj.GenerateResource.cache
+C:\Users\chri45i4\source\repos\SymmetriskKryptering\SymmetriskKryptering\SymmetriskKryptering\obj\Debug\SymmetriskKryptering.csproj.CoreCompileInputs.cache
+C:\Users\chri45i4\source\repos\SymmetriskKryptering\SymmetriskKryptering\SymmetriskKryptering\obj\Debug\SymmetriskKryptering.exe
+C:\Users\chri45i4\source\repos\SymmetriskKryptering\SymmetriskKryptering\SymmetriskKryptering\obj\Debug\SymmetriskKryptering.pdb
